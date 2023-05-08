@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма бронирования переговорной</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+<div class="main">
+    <div class="background">
+        <div class="content-container">
+            <div class="image-container">
+                <img src="images/logo.png" alt="Описание картинки" class="centered-image">
+            </div>
+        <div id="booking-form" class="booking-form">
+            <h1 class="text-center">Форма бронирования переговорной</h1>
+            <form id="form">
+            <div class="form-group">
+                <label>Башня</label>
+                <select id="tower">
+                <option disabled selected>Выберите башню</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Этаж</label>
+                <select id="floor">
+                <option disabled selected>Выберите этаж</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Переговорка</label>
+                <select id="room">
+                <option disabled selected>Выберите переговорку</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Начальное время</label>
+                <input type="text" id="start-time" class="datepicker" />
+            </div>
+            <div class="form-group">
+                <label>Конечное время</label>
+                <input type="text" id="end-time" class="datepicker" />
+            </div>
+            <div class="form-group">
+                <label>Комментарий</label>
+                <textarea id="comment" rows="3"></textarea>
+            </div>
+            <div class="button-group">
+            <button type="submit" class="submit-btn">Отправить</button>
+            <button type="button" class="clear-btn">Очистить</button>
+            </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
